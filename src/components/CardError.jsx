@@ -4,10 +4,7 @@ function CardError(props){
   function closeError(){props.onClose()}
   
   
-          
-  
-
-    return (
+ return (
     <div className="backdrop"> 
         <div className="cardError">
             something went wrong
