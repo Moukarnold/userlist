@@ -5,11 +5,11 @@ function Affichage(props){
 
 
     return (
-        <div className="resultContainer">
+        <div className="container">
         <ul>
            { props.contactData.map((contact, index)=>(
                 <li key={index}> 
-                 {contact.userName} {contact.age}
+                 {contact.userName}  is {contact.age} years old
                  </li>
             ))}
        </ul>

@@ -6,12 +6,13 @@ import  "./index.css";
 
 function App(){
    const [ contacts , setContacts] = useState([]);
-
+    const [ isAffichageVisible, setIsAffichageVisible] = useState(false);
 
   function handleContactData(newContact){
    setContacts((prevContacts)=>{
+      setIsAffichageVisible(true)
       return [...prevContacts, newContact]
-
+     
    });
 
   }
@@ -20,10 +21,8 @@ function App(){
 
 return ( <div>
     <UsersInput onTransfert={handleContactData}/>
-
-      <Affichage contactData= {contacts} />
+{isAffichageVisible && <Affichage contactData={contacts} />}
        
-
       </div>
          )
     
