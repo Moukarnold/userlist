@@ -66,9 +66,10 @@ setContactError((prevError)=>({
 }
 
 
-return (
-
+return (<div >
+<div className="theTitle" ><h1> Userlist</h1></div> 
 <div className="container"> 
+   
        <form onSubmit= {handleSubmit}>
          <p> Username</p>
         <input name= "userName" onChange = {handleChange} type="text" value={contact.userName}/>
@@ -78,7 +79,6 @@ return (
          <input name= "age" onChange = {handleChange}type="number" value={contact.age}/>
 
         <br />
-        {/* {contactError.userName || contactError.age ? <CardError errorTextName={contactError.userName} errorTextAge={contactError.age}  onClose={() => setIsCardErrorVisible(false)}/> : null} */}
         
         <button  type="submit">   Add User    </button>
         {isCardErrorVisible && ( <CardError
@@ -87,6 +87,7 @@ return (
             onClose={() => setIsCardErrorVisible(false)}
           />)}
        </form>
+       </div>
 
 </div>
 )

@@ -8,8 +8,8 @@ function CardError(props){
     <div className="backdrop"> 
         <div className="cardError">
             something went wrong
-            {props.errorTextName && <p>{props.errorTextName}</p>}
-        {props.errorTextAge && <p>{props.errorTextAge}</p>}
+            {props.errorTextName && <div><p>{props.errorTextName}</p> </div>}
+        {props.errorTextAge && <div><p>{props.errorTextAge}</p></div>}
           <button onClick ={closeError} > ok</button>
         </div>
      </div>

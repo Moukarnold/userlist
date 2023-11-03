@@ -1,15 +1,25 @@
 
 
 .container{
-    height: 180px;
-    width: 600px;
+    height: auto;
+    width: 400px;
     background-color: aliceblue;
     border-radius: 5px;
     border: solid 1px;
     display: flex;
     align-content: center;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
 
 }
+ .theTitle{
+  display: flex;
+  justify-content: center;
+  
+
+ }
 
 
 .form {
@@ -26,7 +36,8 @@
     background-color: aliceblue;
     border: solid 1px;
     border-radius: 5px;
-
+    margin: 10% auto;
+    padding-top: 1%;
   }
 
   .backdrop{
@@ -38,4 +49,13 @@
   z-index: 10;
   background: rgba(0, 0, 0, 0.75);
 
+  }
+  
+  p{
+    margin-bottom: 4px;
+  }
+  
+  button{
+
+    margin-top: 10%;
   }
